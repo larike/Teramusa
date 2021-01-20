@@ -1,0 +1,44 @@
+﻿= <h3>Ohjelman avustus</h3>
+!https://tim.jyu.fi/view/kurssit/tie/ohj2/2017k/ht/lamikett = Suunnitelma TIMissä
+=
+kuvat/paaikkuna_vaihe2.png = Ohjelman pääikkuna 2.vaiheessa
+kuvat/jasenenpoisto_varmistus.png = Dialogi, poistetaanko jäsen
+kuvat/MuokkaaAsiakasView.png = Muokkaus ikkuna, asiakkaan tietoja varten
+kuvat/MuokkaaPalveluView.png = Muokkaus ikkuna, palvelun tietoja varten
+kuvat/haku_paasivu.png = kuinka hakusuoritus näkyy
+kuvat/Tallennus_varmistus.png = Dialogi tallennetaanko muutokset
+kuvat/TulosteView.png = Esikatselu tulostuksesta
+
+=
+= <h3>Ajettava ohjelma</h3>
+Teramusa.jar = ajettava ohjelma, lataa ja aja
+=
+=<h3>Ohjelman esisuunnitelma</h3>
+=
+kuvat/alkuikkuna.png = ohjelman alkuikkuna (käsin piirretty)
+kuvat/virheilmoitus.png = kuva ohjelman alusta, virheellinen syöte 
+kuvat/paaikkuna2.png   = ohjelman paaikkuna
+=
+= <h3>Tietorakenne ja luokat</h3>
+@https://tim.jyu.fi/view/kurssit/tie/ohj2/2017k/ht/lamikett4#crc = CRC-kortit TIMissä
+kuvat/TeramusaTietorakenne2.jpg = Tietorakenteen kuva
+
+=
+= <h3>Käyttöliittymän ulkoasu JavaFX:llä</h3>
+src/fxTeramusa/TeramusaMain.java = ohjelman käynnistävä pääluokka
+src/fxTeramusa/TeramusaGUIView.fxml =Teramusan varsinainen käyttöliittymä
+src/fxTeramusa/TeramusaGUIController.java = ohjain joka käsittelee käyttöliittymästä tulevat tapahtumat
+src/fxTeramusa/Teramusa.css = tyylitiedosto (ei vielä muutettu mitään)
+
+src/fxTeramusa/MuokkaaAsiakasView.fxml = Ikkuna, jossa asiakkaan tietoja muokataan
+src/fxTeramusa/MuokkaaPalveluView.fxml = Ikkuna, jossa palvelun tietoja muokataan
+src/fxTeramusa/TulostusView.fxml = alue johon voidaan tulostaa
+
+src/firma/Asiakas.java = asiakkaan käsittely
+src/kanta/HetuTarkistus = htunnuksen tarkistus
+=
+= <h3>Muita tiedostoja</h3>
+build.xml = Ant-skripti joka tekee .jar:in
+.project = Eclipsen projekti
+.classpath = Eclipsen luokkapolku
+

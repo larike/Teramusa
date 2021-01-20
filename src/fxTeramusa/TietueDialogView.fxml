@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.geometry.*?> 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxTeramusa.TietueDialogController">
+   <top>
+      <Label fx:id="labelVirhe" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <ScrollPane fx:id="panelTietue" fitToWidth="true" pannable="true" BorderPane.alignment="CENTER">
+         <content>
+            <GridPane fx:id="gridTietue" hgap="10.0" maxWidth="-Infinity">
+               <columnConstraints>
+                  <ColumnConstraints fillWidth="false" halignment="RIGHT" hgrow="NEVER" minWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Nimi" />
+                  <TextField text="Siiri Sievänen" GridPane.columnIndex="1" />
+                  <Label text="Hetu" GridPane.rowIndex="1" />
+                  <Label text="Katuosoite" GridPane.rowIndex="2" />
+                  <Label text="Postinumero" GridPane.rowIndex="3" />
+                  <Label text="Kaupunki" GridPane.rowIndex="4" />
+                  <Label text="Puhelin nro" GridPane.rowIndex="5" />
+                  <Label text="Lähettävä taho" GridPane.rowIndex="6" />
+                  <Label text="Diagnoosi" GridPane.rowIndex="7" />
+                  <Label text="Sopimuskausi" GridPane.rowIndex="8" />
+                  <TextField text="020367-123B" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField text="Rantapolku 5a16" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField  text="41200" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField  text="Jyväskylä" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField  text="0401234567" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField  text="Yksityinen" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField  text="F60.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField  text="1.1.16-31.5.16" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+               </children>
+               <padding>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </GridPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <HBox spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button onAction="#handleTallenna" text="Tallenna">
+               <tooltip>
+                  <Tooltip text="Uuden asiakkaan lisäys" />
+               </tooltip>
+            </Button>
+            <Button onAction="#handleCancel" text="Cancel">
+               <tooltip>
+                  <Tooltip text="Muokkaa asiakkaan tietoja" />
+               </tooltip>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
+
+

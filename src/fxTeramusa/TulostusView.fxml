@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxTeramusa.TulostusController">
+   <center>
+      <TextArea fx:id="tulostusAlue" prefHeight="200.0" prefWidth="200.0" text="Nimi: Siiri Sievänen&#10;Hetu: 020367-123B&#10;Katuosoite: Rantapolku 5a16&#10;Postinumero: 41200&#10;Kaupunki: Jyväskylä&#10;Puhelin: 0401234567&#10;Lähettäjä: Yksityinen&#10;Diagnoosi: F60.0&#10;Sopimuskausi: 1.1.16-31.5.-16&#10;------------------------&#10;Terapiamuoto: Musiikkiterapia&#10;Terapeutti: Jorg Jonkainen&#10;Min / vko: 2 x 45 min" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

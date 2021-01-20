@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Teramusa">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="C:/Users/Kena/workspace"/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/Teramusa.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="fxTeramusa.TeramusaMain"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.jarfile}/trunk/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kena/.p2/pool/plugins/org.eclipse.fx.ide.css.jfx8_2.4.0.201605112122.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kena/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Kena/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/java-neon/eclipse/dropins/fxgui.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/bin/Ali.jar"/>
+        </jar>
+    </target>
+</project>
